@@ -10,8 +10,8 @@ const pathSSLCert = path.resolve(__dirname, 'ssl.crt');
 const pathSSLKey = path.resolve(__dirname, 'ssl.key');
 
 // proxy configuration
-app.use('/api', proxy({ target: 'http://127.0.0.1:4300', changeOrigin: true }));
-app.use('/api-web', proxy({ target: 'http://127.0.0.1:4300', changeOrigin: true }));
+app.use('/api', proxy({ target: 'https://auth.eu.yuuvis.io/auth', changeOrigin: true }));
+app.use('/api-web', proxy({ target: 'https://auth.eu.yuuvis.io/auth', changeOrigin: true }));
 
 // static resources from dist
 app.use(express.static(destPath));
