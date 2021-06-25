@@ -9,7 +9,7 @@
     "ng": "ng",
     "prebuild:about": "node ./tools/scripts/common/about/prebuild-about-state",
     "start": "ng serve --port 4400 --proxy-config proxy.config.js",
-    "start:dist": "npm run start -- --configuration dist",
+    "start:dist": "npm run start -- --configuration docs",
     "start:dev": "npm run start -- --configuration dev",
     "prestart:cmp:test": "npm run prebuild:cmp:test",
     "start:cmp:test": "ng serve component-tests --configuration test --port 4500 --proxy-config proxy.config.js",
