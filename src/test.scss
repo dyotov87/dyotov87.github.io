@@ -1,1 +1,65 @@
+:host {
+    
+    width: fit-content;
+    height: auto;
+    border: 0;
 
+    .types-area{
+        border-top: 1px solid var(--panel-divider-color);
+    }
+
+    .type-group{
+        // border-top:  0.1em solid black;
+        // border-left:  0.1em solid black;
+        // border-right:  0.1em solid black;
+        //border:  1px solid #c8c8c8;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 0.5em;
+        background-color: var(--panel-background);
+    }
+
+    .type-label{
+        font-size: 1.5em;
+        padding: 0.5em;
+
+    }
+
+    // .obj-type{
+    //     font-size: 1.2em;
+    //     padding-left: 1.5em;
+    //     padding-bottom: 0.2em;
+    //     padding-top: 0.2em;
+    //     cursor: pointer;
+    //     border-bottom: 0.1em solid black;
+    // }
+
+    .obj-type:not(:last-child){
+        font-size: 1.2em;
+        padding-left: 1.5em;
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+        cursor: pointer;
+        border-bottom: 1px solid var(--panel-divider-color)
+    }
+
+    .obj-type{
+        font-size: 1.2em;
+        padding-left: 1.5em;
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+        cursor: pointer;
+    }
+
+    .obj-type:hover {
+        background-color: rgba(var(--color-accent-rgb), 0.2);
+    }
+
+    .selected:active {
+        background-color: rgb(var(--color-accent-rgb), 0.2);
+    }
+    
+    .selected {
+        background-color: rgb(var(--color-accent-rgb), 0.2);
+      }
+}
